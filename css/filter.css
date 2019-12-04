@@ -1,0 +1,250 @@
+/* =================Filter================= */
+.filter {
+    margin: 0 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.filter a {
+    text-decoration: none;
+    color: white;
+}
+
+.filter a:hover {
+    color: #4A4A4A;
+}
+
+.genre {
+    grid-column-end: span 6;
+    position: relative;
+    width: 85vw;
+    border-radius: 30px;
+    background-color: #94F2C6;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.location {
+    grid-column-end: span 6;
+    position: relative;
+    width: 85vw;
+    border-radius: 30px;
+    background-color: #6CD9CE;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+.date {
+    grid-column-end: span 6;
+    position: relative;
+    width: 85vw;
+    border-radius: 30px;
+    background-color: #F2695C;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+/* ================= Responsive Filter Medium================= */
+@media only screen and (max-width:992px) {
+    .filter {
+        margin: 0 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .filter a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .filter a:hover {
+        color: #4A4A4A;
+    }
+
+    .genre {
+        grid-column-end: span 6;
+        position: relative;
+        width: 75vw;
+        border-radius: 30px;
+        background-color: #94F2C6;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .location {
+        grid-column-end: span 6;
+        position: relative;
+        width: 75vw;
+        border-radius: 30px;
+        background-color: #6CD9CE;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .date {
+        grid-column-end: span 6;
+        position: relative;
+        width: 75vw;
+        border-radius: 30px;
+        background-color: #F2695C;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+        /* make scrollbar transparent */
+    }
+}
+
+/* ================= Responsive Filter Medium================= */
+@media only screen and (max-width:992px) {
+    .filter {
+        margin: 0 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .filter a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .filter a:hover {
+        color: #4A4A4A;
+    }
+
+    .genre {
+        grid-column-end: span 6;
+        position: relative;
+        width: 75vw;
+        border-radius: 30px;
+        background-color: #94F2C6;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .location {
+        grid-column-end: span 6;
+        position: relative;
+        width: 75vw;
+        border-radius: 30px;
+        background-color: #6CD9CE;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .date {
+        grid-column-end: span 6;
+        position: relative;
+        width: 75vw;
+        border-radius: 30px;
+        background-color: #F2695C;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+        /* make scrollbar transparent */
+    }
+}
+
+/* ================= Responsive Filter Small ================= */
+@media only screen and (max-width:375px) {
+    .filter {
+        margin: 0 0 0 0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .filter a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .filter a:hover {
+        color: #4A4A4A;
+    }
+
+    .genre {
+        grid-column-end: span 6;
+        position: relative;
+        width: 85vw;
+        border-radius: 30px;
+        background-color: #94F2C6;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .location {
+        grid-column-end: span 6;
+        position: relative;
+        width: 85vw;
+        border-radius: 30px;
+        background-color: #6CD9CE;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    .date {
+        grid-column-end: span 6;
+        position: relative;
+        width: 85vw;
+        border-radius: 30px;
+        background-color: #F2695C;
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        white-space: nowrap;
+        overflow: scroll;
+    }
+
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: transparent;
+        /* make scrollbar transparent */
+    }
+}
+

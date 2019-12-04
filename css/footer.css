@@ -1,0 +1,28 @@
+/* =================Footer================= */
+
+hr {
+    border: solid .5px #c7c7c7;
+}
+
+.footer {
+    padding-bottom: 25px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    /*    padding-left: 200px;*/
+}
+
+.top a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+.lang a {
+    color: #0090dd;
+    text-decoration: none;
+}

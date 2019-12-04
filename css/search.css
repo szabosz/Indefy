@@ -1,0 +1,29 @@
+/* =================Search Bar================= */
+.search {
+    margin: 0 auto;
+    /* centers the div */
+    grid-column-end: span 6;
+    line-height: 0;
+    /* remove the line height */
+}
+
+.search input {
+    width: 200px;
+    border: none;
+    border-bottom: solid 1px #c7c7c7;
+}
+
+.search button {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #c7c7c7;
+}
+
+.search button:hover {
+    color: #80C7F2;
+}
+
+
+

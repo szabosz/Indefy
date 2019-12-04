@@ -1,0 +1,310 @@
+/* =================Landing================= */
+.wrapper-landing {
+    margin: 200px 50px 0 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 5px;
+    height: 100vh;
+}
+
+.landing-content {
+    grid-column-end: span 6;
+    position: relative;
+}
+
+.landing-content h1 {
+    font-family: OpenSans, sans-serif;
+    margin-left: 72px;
+    transition-timing-function: ease-in;
+    transition: 0.8s;
+}
+
+.landing-content img {
+    width: 100%;
+    /*
+    transition-timing-function: ease-out;
+    transition: 0.8s;
+*/
+}
+
+.buttons-landing {
+    padding-left: 72px;
+    /*
+    transition-timing-function: linear;
+    transition: 0.8s;
+*/
+}
+
+.buttonC {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 4px;
+    border: solid 2px #80c7f2;
+    font-size: 20px;
+    line-height: 0.5;
+    color: #80c7f2;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.buttonL {
+    width: 150px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid 2px #6cd9ce;
+    font-size: 20px;
+    line-height: 0.5;
+    color: #6cd9ce;
+    background-color: white;
+}
+
+
+/* =================Responsive Landing================= */
+@media only screen and (max-width: 879px) {
+    .wrapper-landing {
+        margin: 100px 30px 0 0px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+        height: 100vh;
+    }
+
+    .landing-content {
+        grid-column-end: span 12;
+        position: relative;
+    }
+
+    .landing-content h1 {
+        font-family: OpenSans, sans-serif;
+        font-size: 20px;
+        margin-left: 50px;
+        transition-timing-function: ease-in;
+        transition: 0.8s;
+    }
+
+    .landing-content img {
+        grid-column-end: span 12;
+        width: 100%;
+        /*
+    transition-timing-function: ease-out;
+    transition: 0.8s;
+*/
+    }
+
+    .buttons-landing {
+        padding-left: 50px;
+        /*
+    transition-timing-function: linear;
+    transition: 0.8s;
+*/
+    }
+
+    .buttonC {
+        width: 125px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 4px;
+        border: solid 2px #80c7f2;
+        font-size: 17px;
+        line-height: 0.5;
+        color: #80c7f2;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+
+    .buttonL {
+        width: 125px;
+        height: 50px;
+        border-radius: 4px;
+        border: solid 2px #6cd9ce;
+        font-size: 17px;
+        line-height: 0.5;
+        color: #6cd9ce;
+        background-color: white;
+    }
+
+
+}
+
+/* =================Responsive Landing================= */
+@media only screen and (max-width: 400px) {
+    .wrapper-landing {
+        margin: 100px 30px 0 0px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 5px;
+        height: 100vh;
+    }
+
+    .landing-content {
+        grid-column-end: span 12;
+        position: relative;
+    }
+
+    .landing-content h1 {
+        font-family: OpenSans, sans-serif;
+        font-size: 20px;
+        margin-left: 40px;
+        transition-timing-function: ease-in;
+        transition: 0.8s;
+    }
+
+    .landing-content img {
+        grid-column-end: span 12;
+        width: 100%;
+    }
+
+    .buttons-landing {
+        padding-left: 40px;
+    }
+
+    .buttonC {
+        width: 100px;
+        height: 50px;
+        margin-right: 10px;
+        border-radius: 4px;
+        border: solid 2px #80c7f2;
+        font-size: 12px;
+        line-height: 0.5;
+        color: #80c7f2;
+        background-color: white;
+        margin-bottom: 5px;
+    }
+
+    .buttonL {
+        width: 100px;
+        height: 50px;
+        border-radius: 4px;
+        border: solid 2px #6cd9ce;
+        font-size: 12px;
+        line-height: 0.5;
+        color: #6cd9ce;
+        background-color: white;
+    }
+
+}
+
+/* ===============How it Works=============== */
+.title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.36;
+    text-align: center;
+    margin: 50px;
+}
+
+.wrapper-works {
+    margin: 10px 72px 72px 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+}
+
+.wrapper-works h2 {
+    grid-column-end: span 12;
+    text-align: center;
+}
+
+.six {
+    grid-column-end: span 6;
+    position: relative;
+}
+
+
+.six img {
+    width: 100%;
+    position: relative;
+}
+
+.paragraph {
+    margin-top: 20%;
+}
+
+.paragraph h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2;
+    text-align: left;
+}
+
+.paragraph p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 2;
+    text-align: left;
+}
+
+/* ===============Responsive How it Works=============== */
+@media only screen and (max-width: 550px) {
+    .title {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.36;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .wrapper-works {
+        margin: 10px 72px 72px 50px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px;
+    }
+
+    .wrapper-works h2 {
+        grid-column-end: span 12;
+        text-align: center;
+    }
+
+    .six {
+        grid-column-end: span 12;
+        position: relative;
+    }
+
+
+    .six img {
+        width: 100%;
+    }
+
+    .paragraph {
+        margin-top: 20%;
+    }
+
+    .paragraph h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2;
+        text-align: left;
+    }
+
+    .paragraph p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 2;
+        text-align: left;
+    }
+}
+
+/* ===============Register=============== */
+.wrapper-register {
+    margin: 10px 72px 72px 50px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+
+.register {
+    grid-column-end: span 12;
+    position: relative;
+    width: 100%;
+    font-size: 15px;
+    color: #4a4a4a;
+    text-align: center;
+}

@@ -1,0 +1,132 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* =================Sign Up================= */
+
+.wrapper {
+    margin: 70px 300px 70px 300px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+}
+
+.wrapper h1,
+p {
+    text-align: center;
+}
+
+.form {
+    grid-column-end: span 1;
+}
+
+.wrapper input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #707070;
+    width: 100%
+}
+
+.submit {
+    text-align: center;
+}
+
+.buttonS {
+    width: 170px;
+    height: 50px;
+    border-radius: 4px;
+    border: solid 2px #80c7f2;
+    font-size: 20px;
+    line-height: 0.5;
+    color: white;
+    background-color: #80c7f2;
+}
+
+/* =================Responsive Sign Up================= */
+@media only screen and (max-width:900px) {
+    .wrapper {
+        margin: 70px 90px 70px 90px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .wrapper h1,p {
+        text-align: left;
+    }
+
+    .wrapper h1 {
+        grid-column-end: span 1;
+    }
+    .form {
+        grid-column-end: span 1;
+    }
+
+    .wrapper input {
+        font-size: 15px;
+        color: #707070;
+        width: 100%
+    }
+
+    .submit {
+        text-align: center;
+    }
+
+    .buttonS {
+        width: 170px;
+        height: 50px;
+        border-radius: 4px;
+        border: solid 2px #80c7f2;
+        font-size: 20px;
+        line-height: 0.5;
+        color: white;
+        background-color: #80c7f2;
+    }
+}
+
+/* =================Responsive Sign Up Phone================= */
+@media only screen and (max-width:600px) {
+    .wrapper {
+        margin: 70px 90px 70px 90px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+    }
+
+    .wrapper h1,p {
+        text-align: center;
+    }
+
+    .wrapper h1 {
+        grid-column-end: span 1;
+    }
+    .form {
+        grid-column-end: span 1;
+    }
+
+    .wrapper input {
+        font-size: 15px;
+        color: #707070;
+        width: 100%
+    }
+
+    .submit {
+        text-align: center;
+    }
+
+    .buttonS {
+        width: 170px;
+        height: 50px;
+        border-radius: 4px;
+        border: solid 2px #80c7f2;
+        font-size: 20px;
+        line-height: 0.5;
+        color: white;
+        background-color: #80c7f2;
+    }
+}
+

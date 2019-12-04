@@ -1,0 +1,180 @@
+/* =================Wrapper Desktop================= */
+.wrapper {
+    margin: 150px 100px 300px 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 75px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.back {
+    grid-column-end: span 12;
+}
+
+.back a{
+    text-decoration: none;
+    color:#4A4A4A;
+}
+
+.back a:hover {
+    text-decoration: none;
+    color:deepskyblue;
+}
+
+
+/* =================Artist Info================= */
+.artist-info {
+    grid-column-end: span 6;
+    width: 100%;
+    grid-gap: 75px;
+}
+
+.artist-info img {
+    width: 100%;
+}
+
+.profile {
+    width: 100%;
+    /*    color: #c2c2c2;*/
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+
+.update {
+    /* border: solid 1px whitesmoke; */
+    padding: 10px;
+}
+
+.update h3:hover {
+    color: deepskyblue;
+}
+
+.update-date {
+    float: right;
+}
+
+/*
+.update:hover {
+    background-color: azure;
+}
+*/
+
+/* =================Responsive Profile================= */
+@media only screen and (max-width:800px) {
+    .wrapper {
+        margin: 150px 10px 150px 10px;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 75px;
+    }
+
+    .artist-info {
+        grid-column-end: span 12;
+        width: 100%;
+        grid-gap: 75px;
+    }
+
+    .artist-info img {
+        width: 50%;
+    }
+
+    .profile {
+        width: 100%;
+        font-size: 15px;
+        padding-bottom: 20px;
+    }
+
+    .update {
+        /* border: solid 1px whitesmoke; */
+        padding: 10px;
+        width: 90vw;
+    }
+
+    .update h3:hover {
+        color: deepskyblue;
+    }
+
+    .update-date {
+        float: right;
+    }
+}
+
+/* =================Music Library================= */
+.library {
+    grid-column-end: span 6;
+    width: 100%;
+    grid-gap: 75px;
+}
+
+.new-releases {
+    padding-bottom: 20px;
+}
+
+/* =================Responsive Music Library================= */
+@media only screen and (max-width:800px) {
+    .library {
+        grid-column-end: span 12;
+        width: 100%;
+        grid-gap: 75px;
+        width: 90vw;
+    }
+
+    .new-releases {
+        padding-bottom: 20px;
+    }
+}
+
+/* =================Song Widget================= */
+.song-widget {
+    display: flex;
+    align-items: center;
+    line-height: 2px;
+    /* border: solid 1px whitesmoke; */
+    width: 100%;
+
+}
+
+/* use this for the hover of play button? 
+.song-widget img {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    padding-left: 10px;
+
+}
+*/
+
+.track-number {
+    /*    float:left;*/
+    padding-left: 10px;
+}
+
+.widget-info {
+    text-align: left;
+    padding: 25px;
+}
+
+/* =================Album Widget================= */
+.album-widget {
+    border: solid 1px whitesmoke;
+    line-height: 2px;
+    padding: 5px;
+}
+
+.album-widget:hover {
+    background-color: azure;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    border: none;
+    line-height: 2px;
+    padding: 0px;
+}
+
+.album-widget img {
+    width: 15%;
+    padding-left: 10px;
+}

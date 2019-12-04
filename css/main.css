@@ -1,0 +1,46 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #4A4A4A;
+    letter-spacing: -0.5;
+}
+
+h2 {
+    font-size: 24px;
+    color: #4A4A4A;
+    letter-spacing: -0.28;
+}
+
+h3 {
+    font-size: 20px;
+    color: #4A4A4A;
+    line-height: 32px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #797979;
+    letter-spacing: -0.5;
+}
+
+/* =================Button Hovers================= */
+
+.buttonC:hover {
+    color:#C7C7C7;
+    border: solid 2px #C7C7C7;
+}
+
+.buttonL:hover {
+    color:#C7C7C7;
+    border: solid 2px #C7C7C7;
+}
+

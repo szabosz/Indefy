@@ -1,0 +1,89 @@
+/* =================Wrapper Desktop================= */
+.wrapper {
+    margin: 150px 72px 150px 72px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 75px;
+}
+
+/* =================Trending Now================= */
+.title {
+    grid-column-end: span 6;
+}
+
+.title h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.trending-song {
+    grid-column-end: span 1;
+    position: relative;
+}
+
+.trending-song:hover {
+    background-color: #F9F9F9;
+}
+
+.trending-song img {
+    width: 100%;
+}
+
+.trending-song h1 {
+    width: 100%;
+    color: #c2c2c2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.trending-song h2 {
+    color: #c2c2c2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+/* =================Responsive Trending Now for Medium================= */
+@media only screen and (max-width:992px) {
+    .wrapper {
+        margin: 150px 72px 150px 72px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 75px;
+    }
+
+    .title {
+        grid-column-end: span 6;
+    }
+
+    .trending-song {
+        grid-column-end: span 2;
+        position: relative;
+    }
+
+}
+
+
+/*=================Responsive Trending Now for Small=================*/
+@media only screen and (max-width:468px) {
+    .wrapper {
+        margin: 10px 10px 10px 10px;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 75px;
+    }
+
+    .title {
+        grid-column-end: span 6;
+    }
+
+    .trending-song {
+        grid-column-end: span 6;
+        position: relative;
+    }
+
+}
+
+

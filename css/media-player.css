@@ -1,0 +1,23 @@
+/*=================Media Player=================*/
+
+.media-player {
+    background-color: white;
+    opacity: 50;
+/*    display: inline-block;*/
+    /*    grid-column-end: span 6;*/
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    clear: both;
+}
+
+
+.media-player audio {
+    width: 90vw;
+    color:aqua;
+}
+
+audio controls {
+    border: solid 1px black;
+}

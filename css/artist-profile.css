@@ -1,0 +1,88 @@
+/* =================Wrapper Desktop================= */
+.wrapper {
+    margin: 150px 100px 20px 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 75px;
+}
+
+/* =================User Profile================= */
+
+.user-profile {
+    grid-column-end: span 5;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px whitesmoke;
+}
+
+.user-profile img {
+    width: 150px;
+}
+
+
+.profile-content {
+    float: right;
+}
+
+
+/* =================Music Library================= */
+.wrapper-library{
+    margin: 75px 100px 100px 100px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 75px;
+}
+
+.left {
+    grid-column-end: span 6;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px whitesmoke;
+}
+.left img {
+    width: 100%;
+}
+
+
+.right {
+    grid-column-end: span 6;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px whitesmoke;
+}
+
+.music-library {
+    grid-column-end: span 6;
+    padding: 10px;
+    width: 100%;
+    border: solid 1px whitesmoke;
+}
+
+
+/* =================Song Widget================= */
+.song-widget {
+    display: flex;
+    align-items: center;
+    line-height: 2px;
+    border: solid 1px whitesmoke;
+}
+
+/* use this for the hover of play button? 
+.song-widget img {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    padding-left: 10px;
+
+}
+*/
+
+.track-number {
+    /*    float:left;*/
+    padding-left: 10px;
+}
+
+.widget-info {
+    text-align: left;
+    padding: 25px;
+}
