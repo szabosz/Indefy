@@ -1,4 +1,15 @@
 <!DOCTYPE html>
+<?php session_start();
+// include("includes/header.php");
+include("includes/connect.php");
+    $artistToSearch = $_GET["artistGenre"];
+    $stmt = $pdo->prepare("SELECT * FROM `artists` WHERE `artistGenre` LIKE '%$artistToSearch%'");
+    $stmt->execute();
+    $artistList = array();
+    // while($row = $stmt->fetch()) {
+    //     $artistList[] = $row;
+    // }
+?>
 <html lang="en">
 
 <head>
@@ -30,114 +41,32 @@
             <!-- Filter -->
             <?php include("includes/filter.php");?>
 
-            <!--    Songs     -->
-            <div class="title">
-                <h1>Songs</h1>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Lump Sum</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Lump Sum</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Lump Sum</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Lump Sum</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Lump Sum</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Lump Sum</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
-
-            <!--    Albums     -->
-            <div class="title">
-                <h1>Albums</h1>
-            </div>
-
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-                <h2>Bon Iver</h2>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-                <h2>Bon Iver</h2>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-                <h2>Bon Iver</h2>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-                <h2>Bon Iver</h2>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-                <h2>Bon Iver</h2>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-                <h2>Bon Iver</h2>
-            </div>
-
 
             <!--    Artists     -->
             <div class="title">
-                <h1>Artists</h1>
+                <h1><?php '%$artistToSearch%' ?> Artists</h1>
             </div>
+            
+            <?php
+                $stmt = $pdo->prepare("SELECT * FROM `artists` WHERE `artistGenre` LIKE '%$artistToSearch%' ");
+                $stmt->execute();
 
-            <div class="result">
+                while($row = $stmt->fetch()) { 
+                ?>
+                <div class="result">  
+                    <img src="<?php echo($row["artistProfile"]);?>" />
+                    <a href="artist-page.php"><h1><?php echo($row["artistName"]);?></h1>
+                </div>
+                <?php
+                }
+                ?>
+        
+
+            <!-- <div class="result">
                 <img src="assets/image.png" />
                 <h1>Bon Iver</h1>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-            </div>
-            <div class="result">
-                <img src="assets/image.png" />
-                <h1>Bon Iver</h1>
-            </div>
+            </div> -->
+            
         </section>
 
     </main>

@@ -11,6 +11,13 @@
     width: 200px;
     border: none;
     border-bottom: solid 1px #c7c7c7;
+    outline: none;
+
+}
+
+.search input[type=text]:focus {
+    border: 3px solid #c7c7c7;
+    font-size:40px;
 }
 
 .search button {
@@ -24,6 +31,3 @@
 .search button:hover {
     color: #80C7F2;
 }
-
-
-
